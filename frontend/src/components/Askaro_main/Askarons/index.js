@@ -14,7 +14,7 @@ function Index() {
           flexDirection: "column",
           alignItems: "center",
         }} className="askaro-content">
-          <div style = {{
+          {/* <div style = {{
             width: "100%",
             display: "flex",
             flexDirection: "column",
@@ -23,12 +23,12 @@ function Index() {
             border: "1px solid lightgray",
             borderRadius: "5px",
             backgroundColor: "white"
-          }} className = 'torch'>
-            <img style = {{
+          }} className = 'torch'> */}
+            {/* <img style = {{
             objectFit: "contain"
-          }} width = {200} alt = 'spaces' src = 'https://qsf.fs.askarocdn.net/-4-ans_frontend_assets.images.empty_states.dormant_darkmode.png-26-de0e3d9c488b2b12.png'  />
-          <h2>Add 5 topics you know about</h2>
-          <p>Add topics for a customized feed with questions you can answer.</p>
+          }} width = {200} alt = 'spaces' src = 'https://qsf.fs.askarocdn.net/-4-ans_frontend_assets.images.empty_states.dormant_darkmode.png-26-de0e3d9c488b2b12.png'  /> */}
+          {/* <h2>Add 5 topics you know about</h2> */}
+          {/* <p>Add topics for a customized feed with questions you can answer.</p> */}
           </div>
           {/* <Sidebar /> */}
           
@@ -36,7 +36,7 @@ function Index() {
           <UserFeed />
         </div>
       </div>
-    </div>
+    // </div>
     )
 }
 

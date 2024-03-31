@@ -100,7 +100,7 @@ function Post({ questionId, key, question, imageUrl, timestamp, users, answers, 
       //   // )
       // }
     >
-      <div className="post__info">
+      <div className="post-info">
         <Avatar
           src={
             "http://tinygraphs.com/labs/isogrids/hexa16/tinygraphs?theme=heatwave&numcolors=4&size=220&fmt=svg"
@@ -113,12 +113,9 @@ function Post({ questionId, key, question, imageUrl, timestamp, users, answers, 
           </small>
         )}
       </div>
-      <div className="post__body">
-        <div className="post__question">
-          <p>{question}</p>
-          <button onClick={handleModal} className="post__btnAnswer">
-            Answer
-          </button>
+      <div className="post-body">
+        <div className="post-question">
+         
 
           <Modal
             open={IsmodalOpen}
@@ -128,7 +125,7 @@ function Post({ questionId, key, question, imageUrl, timestamp, users, answers, 
             closeOnOverlayClick={false}
             closeIcon={Close}
           >
-            <div className="modal__question">
+            <div className="modal-question">
               <h1>{question}</h1>
               <p>
                 asked by{" "}
@@ -147,14 +144,14 @@ function Post({ questionId, key, question, imageUrl, timestamp, users, answers, 
                 </span>
               </p>
             </div>
-            <div className="modal__answer">
+            <div className="modal-answer">
               <ReactQuill
                 value={answer}
                 onChange={handleQuill}
                 placeholder="Enter your answer"
               ></ReactQuill>
             </div>
-            <div className="modal__button">
+            <div className="modal-button">
               <button className="cancle" onClick={() => setIsModalOpen(false)}>
                 Cancel
               </button>
@@ -168,18 +165,12 @@ function Post({ questionId, key, question, imageUrl, timestamp, users, answers, 
           width: "100%",
           objectFit: "contain"
         }} src={imageUrl} alt="" />
-        <div className="post__footer">
-        <div className="post__footerAction">
+        <div className="post-footer">
+        <div className="post-footerAction">
           <ArrowUpwardOutlinedIcon />
           <ArrowDownwardOutlinedIcon />
         </div>
 
-        <RepeatOutlinedIcon />
-        <ChatBubbleOutlineOutlinedIcon />
-        <div className="post__footerLeft">
-          <ShareOutlined />
-          <MoreHorizOutlined />
-        </div>
       </div>
         <p style = {{
           color: "rgba(0,0,0,0.5)",
@@ -191,7 +182,7 @@ function Post({ questionId, key, question, imageUrl, timestamp, users, answers, 
               margin: "5px 0px 0px 0px",
               padding: "5px 0px 0px 20px",
               borderTop: "1px solid lightgray",
-            }} className="post__answer">
+            }} className="post-answer">
               
           {
             // answer comes here
