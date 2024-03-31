@@ -1,0 +1,36 @@
+.askaro-box {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border: 1px solid lightgray;
+  background-color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  max-width: 700px;
+}
+
+.askaro-box:hover {
+  border: 1px solid rgb(175, 175, 175);
+}
+
+.askaro-box-info {
+  display: flex;
+  align-items: center;
+}
+
+.askaro-box-info > h5 {
+  color: rgb(129, 129, 129);
+  font-weight: 300;
+  margin-left: 10px;
+}
+
+.askaro-box-question {
+  display: flex;
+  margin-top: 8px;
+}
+
+.askaro-box-question  > p {
+  color: gray;
+  font-weight: bold;
+  font-size: large;
+}
